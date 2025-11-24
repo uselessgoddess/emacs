@@ -21,11 +21,10 @@
   (setq backup-directory-alist `(("." . ,backup-dir))
         auto-save-file-name-transforms `((".*" ,auto-save-dir t))
         lock-file-name-transforms `((".*" ,lock-dir t))
-        create-lockfiles nil)) 
+        create-lockfiles nil))
 
 (load-local "ui.el")
 (load-local "edit.el")
-(load-local "keys.el")
 (load-local "tools.el")
 (load-local "meow.el")
 

@@ -4,4 +4,6 @@ elpa/
 eshell/
 savefile/
 transient/
-
+.emacs.desktop
+projects
+tree-sitter/

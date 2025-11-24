@@ -1,5 +1,18 @@
 ;; smooth scroll
 (pixel-scroll-precision-mode 1)
+(setq-default truncate-lines t)
+
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode t)
+
+(dolist (mode '(term-mode-hook
+                shell-mode-hook
+                eshell-mode-hook
+                dired-mode-hook
+                magit-mode-hook
+                help-mode-hook
+                compilation-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 (use-package vertico
   :ensure t
