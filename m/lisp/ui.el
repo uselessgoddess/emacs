@@ -65,3 +65,9 @@
 ;;   :ensure t
 ;;   :hook
 ;;   (dired-mode . nerd-icons-dired-mode))
+
+(use-package olivetti
+  :ensure t
+  :custom
+  (olivetti-body-width 110)
+  (olivetti-recall-visual-line-mode-entry-state t))

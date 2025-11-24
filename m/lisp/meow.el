@@ -58,6 +58,8 @@
      '("p" . my-project-command)
      '("." . xref-find-definitions)
 
+     '("t z" . olivetti-mode)
+
      '("1" . meow-digit-argument)
      '("2" . meow-digit-argument)
      '("3" . meow-digit-argument)
